@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head> <!-- Meta information of the website. -->
+        <title>Welcome to HTML tutorials</title>
+    </head>
+    <body> <!-- Main content of the website. -->
+        <h1>Heading 1</h1> <!-- h tags are heading tags. They range from h1 to h6 with h1 being largest and h6 being the smallest. -->
+        
+        <p>Pragaraph</p> <!-- p tags are paragraph tags.  -->
+        
+        <p>This break tag.<br>It is used for line braeks in websites.</p> <!-- br tag is break tags. -->
+        
+        <a href="https://www.linkedin.com/in/prtyshks/", target="_blank">My LinkedIn profile</a> <!-- a tags are used to add links to the web page. href is the attribute of a tag used to add links. -->
+        
+        <a href="./web page.html", title="This is the link to second webpage">Second Webpage</a> <!-- Here we have added link to another web page on same website. -->
+        
+        <img src="sample image.jpeg", alt="This is sample image"> <!-- img tags are used for embedding images. src is the attribute that accepts the location/link of the image (corresponding to href of a tag). 
+                                                                    alt is the attribute used to describe the image. 
+                                                                    The text entered in alt attribute is visible in any case where the image cannot be loaded for any reason. -->
+        <ol type="A">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol> <!-- ol tags are ordered list tags. Used to create numbered lists.  Type attribute is used to add numbering to the list. -->
+        
+        <ul style="list-style-type: none">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul> <!-- ul tags are unordered list tags. Used to create bulleted lists. Style in this case is used for inline css formating. -->
+        
+        <dl>
+            <dt>Item 1</dt>
+            <dd>This is 1st item in the list</dd>
+            <dt>Item 2</dt>
+            <dd>This is 2nd item in the list</dd>
+        </dl> <!-- dl tags are description list tags. Comprised of two sub-tags dt and dd.
+                dt defines the lsit item and dd is used for describing the list item. -->
+        
+        <b>Pratyush</b>
+        <strong>Pratyush</strong> <!-- b and strong tags are used to make the text bold. strong is more preferred. -->
+        
+        <i>Pratyush</i>
+        <em>Pratyush</em> <!-- i and em tags are used to make the text italics. em is more preferred. -->
+        
+        <del>This is my sample website.</del> <!-- del tag is used to make a strike through text. -->
+        
+        <p>H<sub>2</sub>O</p> <!-- sub tag is used to write subscripts. -->
+        
+        <p>2<sup>4</sup></p> <!-- sub tag is used to write superscripts. -->
+        
+        <mark>I am a data scientist</mark> <!-- mark tag is used to highlight the text. -->
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pratyush</td>
+                    <td>Kumar Singh</td>
+                </tr>
+                <tr>
+                    <td>Virat</td>
+                    <td>Singh</td>
+                </tr>
+            </tbody>
+        </table> <!-- table tags are used used to create tables. border attribute is used to create the borders of the tables.
+                  sub-tag thead is used to specidfy the heads of the table and tbody is used to specify the entries of the table. 
+                  tr tags are used to create new rows. th tag is used for specifying heading or sub-heading entries in the table. 
+                  tr tag is used to put entries into the the table. -->
+        <br><br>
+        <form action="web_page.html">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="username" required> <br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password" required> <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email" required> <br>
+
+            <p>Select your gender:</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="Gender" value="Male" required><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="Gender" value="Female" required><br>
+
+            <input type="Submit" value="sigup">
+        </form><br> <!-- form tags are used used to create forms. action attribute is used to create the button that leads to another webpage once form is submitted.
+                 sub-tag label is used to define the name of the input field.
+                 sub-tag input is used to create the input field corresponding to the label.
+                 label and input sub-tags are connected using for and id attributes.
+                 id is used with input tag as an identifier. for is used with label tag and helps to identify the input field it is related with.
+                 type attribute is to define the expected input from the user in the input field.
+                 placeholder is generally used to expalin the user what input is expected.
+                 required attaributes states that a input of the specified type is manadatory in the field. -->
+        
+        <form>
+            <label for="Age Group">Select Your Age Group</label>
+            <select name="" id="Age Group">
+                <option value="5-10">5-10</option>
+                <option value="11-25">11-25</option>
+                <option value="26-50">26-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </form> <!-- In this section we are trying to create a dropdown form.
+                 It is similar to the input forms that we created earlier.
+                 Instead of using input tag we use select tag that create the dropdown.
+                 The sub-tag option helps us tp create the options in dropdown.
+                 The attributes for and id hold same significance as in label tag of iput foems.
+                 value attribute if the option tag holds the vaue of the option to be displayed. -->
+    </body>
+</html>
