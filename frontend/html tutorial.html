@@ -72,8 +72,8 @@
         </table> <!-- table tags are used used to create tables. border attribute is used to create the borders of the tables.
                   sub-tag thead is used to specidfy the heads of the table and tbody is used to specify the entries of the table. 
                   tr tags are used to create new rows. th tag is used for specifying heading or sub-heading entries in the table. 
-                  tr tag is used to put entries into the the table. -->
-        <br><br>
+                  td tag is used to put entries into the the table. -->
+        
         <form action="web_page.html">
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="username" required> <br>
@@ -91,11 +91,11 @@
             <input type="radio" id="female" name="Gender" value="Female" required><br>
 
             <input type="Submit" value="sigup">
-        </form><br> <!-- form tags are used used to create forms. action attribute is used to create the button that leads to another webpage once form is submitted.
+        </form> <!-- form tags are used used to create forms. action attribute is used to create the button that leads to another webpage once form is submitted.
                  sub-tag label is used to define the name of the input field.
                  sub-tag input is used to create the input field corresponding to the label.
                  label and input sub-tags are connected using for and id attributes.
-                 id is used with input tag as an identifier. for is used with label tag and helps to identify the input field it is related with.
+                 id attribute is used with input tag as an identifier. for attribute is used with label tag and helps to identify the input field it is related with.
                  type attribute is to define the expected input from the user in the input field.
                  placeholder is generally used to expalin the user what input is expected.
                  required attaributes states that a input of the specified type is manadatory in the field. -->
@@ -114,5 +114,9 @@
                  The sub-tag option helps us tp create the options in dropdown.
                  The attributes for and id hold same significance as in label tag of iput foems.
                  value attribute if the option tag holds the vaue of the option to be displayed. -->
+        
+        <form>
+            <textarea name="" id="textbox" cols="50" rows="1" placeholder="This is a text box."></textarea>
+        </form>
     </body>
 </html>
