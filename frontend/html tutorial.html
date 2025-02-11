@@ -86,11 +86,11 @@
 
             <p>Select your gender:</p>
             <label for="male">Male</label>
-            <input type="radio" id="male" name="Gender" value="Male" required><br>
+            <input type="radio" id="male" name="male" value="Male" required><br>
             <label for="female">Female</label>
-            <input type="radio" id="female" name="Gender" value="Female" required><br>
+            <input type="radio" id="female" name="male" value="Female" required><br>
 
-            <input type="Submit" value="sigup">
+            <input type="Submit" value="signup">
         </form> <!-- form tags are used used to create forms. action attribute is used to create the button that leads to another webpage once form is submitted.
                  sub-tag label is used to define the name of the input field.
                  sub-tag input is used to create the input field corresponding to the label.
@@ -98,7 +98,8 @@
                  id attribute is used with input tag as an identifier. for attribute is used with label tag and helps to identify the input field it is related with.
                  type attribute is to define the expected input from the user in the input field.
                  placeholder is generally used to expalin the user what input is expected.
-                 required attaributes states that a input of the specified type is manadatory in the field. -->
+                 required attaributes states that a input of the specified type is manadatory in the field. 
+                 input tag is used to create interactive form elements like text fields, checkboxes, radio buttons, and more. -->
         
         <form>
             <label for="Age Group">Select Your Age Group</label>
@@ -117,6 +118,14 @@
         
         <form>
             <textarea name="" id="textbox" cols="50" rows="1" placeholder="This is a text box."></textarea>
-        </form>
+            <p>Pick color</p><input type = "color" name = "" id = "">
+            <p>Date:</p><input type = "date" name = "" id = "">
+        </form> <!-- Textarea tags are used to create textboxes in a webpage.
+                 It creates an empty resizable space where text can be entered.
+                 cols and rows attributes are used to define the dimensions of the text box.
+                 placeholder is used to write a meta text in the box to aid the user. 
+                 
+                 -->
+        
     </body>
 </html>
