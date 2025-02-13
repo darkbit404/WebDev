@@ -18,11 +18,19 @@
         <img src="sample image.jpeg", alt="This is sample image"> <!-- img tags are used for embedding images. src is the attribute that accepts the location/link of the image (corresponding to href of a tag). 
                                                                     alt is the attribute used to describe the image. 
                                                                     The text entered in alt attribute is visible in any case where the image cannot be loaded for any reason. -->
-        <ol type="A">
+        
+                                                                    <ol type="A" style = "list-style-type: lower-alpha;" start = "7">
             <li>Item 1</li>
             <li>Item 2</li>
+            <li value = "14">Item 3</li>
             <li>Item 3</li>
-        </ol> <!-- ol tags are ordered list tags. Used to create numbered lists.  Type attribute is used to add numbering to the list. -->
+            <li>Item 3</li>
+            <li>Item 3</li>
+        </ol> <!-- ol tags are ordered list tags. Used to create numbered lists.
+               type attribute defines the type of numbering to used in numbering the list.
+               list-style-type is also used define the type of numbering to be used. It is a inline CSS that can be used with style attribute.
+               start attribute is used to define from which number the numbering should start. In this case number starts from seven.
+               value attribute can be used with the li tags to interuppt the sequence of numbering and restart numbering at affected list item. -->
         
         <ul style="list-style-type: none">
             <li>Item 1</li>
@@ -36,7 +44,7 @@
             <dt>Item 2</dt>
             <dd>This is 2nd item in the list</dd>
         </dl> <!-- dl tags are description list tags. Comprised of two sub-tags dt and dd.
-                dt defines the lsit item and dd is used for describing the list item. -->
+               dt defines the lsit item and dd is used for describing the list item. -->
         
         <b>Pratyush</b>
         <strong>Pratyush</strong> <!-- b and strong tags are used to make the text bold. strong is more preferred. -->
