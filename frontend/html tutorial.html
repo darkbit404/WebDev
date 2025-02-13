@@ -28,7 +28,7 @@
             <li>Item 3</li>
         </ol> <!-- ol tags are ordered list tags. Used to create numbered lists.
                type attribute defines the type of numbering to used in numbering the list.
-               list-style-type is also used define the tlist-style-type is also used define the type of numbering to be used. It is a inline CSS that can be used with style attribute. to be used. It is a inline CSS that can be used with style attribute.
+               list-style-type is also used define the type of numbering to be used. It is a inline CSS that can be used with style attribute.
                start attribute is used to define from which number the numbering should start. In this case number starts from seven.
                value attribute can be used with the li tags to interuppt the sequence of numbering and restart numbering at affected list item. -->
         
@@ -36,9 +36,19 @@
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+            <li>Item 3</li>
+        </ul> 
+        <ul style="list-style-image: url(https://banner2.cleanpng.com/20240216/jqb/transparent-google-logo-google-logo-blue-circle-with-g-1710875609249.webp); list-style-position: inside;">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
         </ul> <!-- ul tags are unordered list tags. Used to create bulleted lists. 
-               as similar to orderedlists style in this case also is used for ttype of numbering to be used. it is inline css formating.
-                -->
+               as similar to orderedlists style in this case also list-style-type is used for type of bullets to be used. it is inline css formating.
+               list-style-image is used when we want to use images/gifs as bullets. url defines the url of the image. we will study more about this in image part.
+               list-style-position: When list items in a webpage are bigger than a line, the item is continued in next line aligned with begining of text on previous line.
+               list-style-position is used to align the text in next line with he bullet pooints. default is outside. only alternative is inside. -->
         
         <dl>
             <dt>Item 1</dt>
@@ -47,6 +57,25 @@
             <dd>This is 2nd item in the list</dd>
         </dl> <!-- dl tags are description list tags. Comprised of two sub-tags dt and dd.
                dt defines the lsit item and dd is used for describing the list item. -->
+        
+        <ul>
+            <p>This list defines Nesting of lists</p>
+            <h2>Peppers</h2>
+            <li>Bell</li>
+            <li>Chile</li>
+            <li>
+                <ol style = "list-style-type: upper-alpha;">
+                    <li>Serrano</li>
+                    <li>Jalapeno</li>
+                    <li>Habareno</li>
+                </ol>
+            </li>
+            <li>Capsicum</li>
+            <li>Cayenne</li>
+            <li>Szechuan</li>
+        </ul> <!-- This is nested list. It is used to embbed a list into a list.
+               Everything in the primary or the secondary lists remains the same as we have studied previously.
+               There's no limit on length or depth of nesting in a list. -->
         
         <b>Pratyush</b>
         <strong>Pratyush</strong> <!-- b and strong tags are used to make the text bold. strong is more preferred. -->
