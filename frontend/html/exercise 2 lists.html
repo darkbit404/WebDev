@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lists</title>
+    </head>
+    <body>
+        <h1>Federated Learning</h1>
+
+        <h2>What is federated learning?</h2>
+        <p>Federated Learning (FL) is a machine learning approach where a model is trained across multiple decentralized devices or servers while keeping data localized. 
+        Instead of sending raw data to a central server, each device trains a local model using its own data and only shares model updates (like gradients or weights) with a central aggregator. 
+        This allows for privacy-preserving, efficient, and scalable learning.</p>
+        
+        <h2>Types of Federated Learning:</h2>
+        <ol type = "A">
+            <li>Based on Data Distribution:</li>
+            <ul>
+                <li>Horizontal Federated Learning</li>
+                <li>Vertical Federated Learning</li>
+                <li>Federated Transfer Learning</li>
+            </ul> <br>
+            <li>Based on Netwrok Architecture:</li>
+            <ul>
+                <li>Centralized Federated Learning</li>
+                <li>Decentralized Federated Learning</li>
+                <li>Hierarchical Federated Learning</li>
+            </ul>
+        </ol>
+
+        <h2>Working of federated learning:</h2>
+        <p>Federated learning being a decentralized approach to machine learning, a model is trained on multiple devices without actually sharing their local data.</p>
+        <dl>
+            <dt><strong>Step 1: Global Model Initialization</strong></dt>
+            <dd>A central server initializes a global model and distributes it to participating client devices.</dd><br>
+            <dt><strong>Step 2: Local Training</strong></dt>
+            <dd>Each client trains the model on its local data without sharing raw data. This happens on edge devices like smartphones or IoT devices.</dd><br>
+            <dt><strong>Step 3: Model Updates</strong></dt>
+            <dd>After training, each client sends only model updates (gradients or weights) to the central server instead of sharing raw data.</dd><br>
+            <dt><strong>Step 4: Aggregation</strong></dt>
+            <dd>The server aggregates updates from multiple clients using techniques like Federated Averaging (FedAvg) to improve the global model.</dd><br>
+            <dt><strong>Step 5: Model Distribution</strong></dt>
+            <dd>The updated global model is sent back to the clients, and the process repeats until the model converges.</dd>
+        </dl>
+    </body>
+</html>
