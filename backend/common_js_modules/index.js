@@ -1,10 +1,10 @@
 require("./require.js"); 
-//require(), a built in function in javascript is used to import external modules that exist in separate files.
+// require(), a built in function in javascript is used to import external modules that exist in separate files.
 
 require("./export multiple functions.js") 
-//The require() function protects the internal variables and functions of the external modules.
-//Hence we cannot actually access the variables, methods and functions of one module into other using only require().
-//To access the variables, methods and functions from external modules we need explictly export the them in external module. 
+// The require() function protects the internal variables and functions of the external modules.
+// Hence we cannot actually access the variables, methods and functions of one module into other using only require().
+// To access the variables, methods and functions from external modules we need explictly export the them in external module. 
 
 
 let single_func = require("./export single function.js")
@@ -24,8 +24,9 @@ let x = 2;
 multiple_func.calculateSum(w, x);
 // If multiple variables, methods and functions are exported using object we need to access them using the variable created for the external module.
 
-
-
+let data = require("./data.json");
+console.log(data);
+// Importing json data into the main javascript file
 
 
 let name = "Pratyush";
