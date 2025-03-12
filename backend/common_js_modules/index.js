@@ -12,7 +12,7 @@ let single_func = require("./export single function.js")
 let a = 10;
 let b = 9;
 single_func(a, b); 
-// If only one variable, function or method is exported in external we can access it directly using the variable created for the external module.
+// If only one variable, function or method is exported in external we have to access it directly using the variable created for the external module i.e. "single_func" in this case.
 
 
 var multiple_func = require("./export multiple functions.js")
@@ -24,7 +24,7 @@ multiple_func.calculateDifference(c, d);
 let w = 1;
 let x = 2;
 multiple_func.calculateSum(w, x);
-// If multiple variables, methods and functions are exported using object we need to access them using the variable created for the external module.
+// If multiple variables, methods and functions are exported using object we need to access them using the variable created for the external module i.e. "mutiple_func" in this case.
 
 let data = require("./data.json");
 console.log(data);
