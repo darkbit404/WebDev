@@ -8,13 +8,16 @@ require("./export multiple functions.js")
 
 
 let single_func = require("./export single function.js")
+// Define the external module from where the function is defined.
+
 let a = 10;
 let b = 9;
 single_func(a, b); 
-// If only one variable, function or method is exported in external we can access it directly.
+// If only one variable, function or method is exported in external we can access it directly using the variable created for the external module.
 
 
 var multiple_func = require("./export multiple functions.js")
+// Define the external module from which multiple functions are to be imported.
 let c = 10;
 let d = 9;
 multiple_func.calculateDifference(c, d); 
