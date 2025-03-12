@@ -8,8 +8,7 @@ require("./export multiple functions.js")
 
 
 let single_func = require("./export single function.js")
-// Define the external module from where the function is defined.
-
+// Define the external module where the function is defined.
 let a = 10;
 let b = 9;
 single_func(a, b); 
