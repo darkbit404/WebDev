@@ -13,5 +13,5 @@ function calculateDifference(c, d)
     console.log(diff);
 }
 
-//To export multiple variables, functions or methods we need to wrap them into objects.
+//To export multiple variables, functions or methods we need to wrap them into object.
 module.exports = {calculateSum, calculateDifference};
