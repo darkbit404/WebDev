@@ -18,7 +18,7 @@ https.get("https://dummyjson.com/products/1", (res) => {
     console.log("Fetched Data Successfully");
 });
 
-//steTimeout. JS Engines offloads this to libuv. libuv stores the callback function.
+//setTimeout. JS Engines offloads this to libuv. libuv stores the callback function.
 setTimeout(() => {
     console.log("setTimeout called after 5 secs.");
 }, 5000);
