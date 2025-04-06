@@ -13,9 +13,9 @@ async function main() {
     //Insert single document in DB
     const data = [
         {
-            firstName: "Shrishti",
-            lastName: "Rawat",
-            age: 25,
+            firstName: "Raj",
+            lastName: "Gulati",
+            age: 23,
             city: "Dehradun"
         }
     ]; 
@@ -31,7 +31,7 @@ async function main() {
             city: "Mumbai"
         },
         {
-            firstName: "Ishani",
+            firstName: "Ishan",
             lastName: "Gupta",
             age: 22,
             city: "Bangalore"
@@ -47,12 +47,12 @@ async function main() {
 
     //Find document in DB according to filter
     //Finds documents where firstName is Shrishti
-    const findOneResult = await collection.find({firstName: "Shrishti"}).toArray();
+    const findOneResult = await collection.find({firstName: "Raj"}).toArray();
     console.log("Found Documents: ", findOneResult);
 
     //Delete documents in DB
     //Deletes documents where lastName is Rawat
-    const deleteResult = await collection.deleteMany({ lastName: "Rawat" });
+    const deleteResult = await collection.deleteMany({ lastName: "Patel" });
     console.log('Deleted documents: ', deleteResult);
 
     return "Done";
