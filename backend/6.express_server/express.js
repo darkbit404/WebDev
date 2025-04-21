@@ -34,7 +34,7 @@ app.post("/us?er", (req, res) => {
     res.send("Hello. This is user GET route.")
 });
 
-//We can add as many s as we want to using +. It will work fine for user aslo and usssser also and ussssssser also.
+//We can add as many s as we want to using +. It will work fine for user also and usssser also and ussssssser also.
 app.post("/us+er", (req, res) => {
     res.send("Hello. This is user GET route.")
 });
