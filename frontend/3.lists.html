@@ -5,6 +5,136 @@
     </head>
 
     <body>
+        <h1>Lists</h1>
+        <!--Lists:
+            These tags are used to display the collection of things sequentially from top to bottom.
+            Primarily there are 3 types of lists:
+                1) Ordered Lists/Numbered Lists
+                2) Unordered Lists
+                3) Definition Lists-->
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                
+        <!--Ordered lists:-->
+        <h2>Ordered Lists</h2>
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ol>
+        <!--<ol>...</ol> defines the type of list being created.
+            <li>...</li> defines the list items.
+            
+            The numbering of list items of ordered lists can be modified 
+            into 5 different types:
+                1) decimal: 1, 2, 3, 4....
+                2) lower_alpha: a, b, c, d....
+                3) upper_alpha: A, B, C, D....
+                4) lower_roman: i, ii, iii, iv....
+                5) upper_roman: I, II, III, IV....
+        Below example defines the list with numbering lower-alpha type. It defines the list
+        with numbering in lowercase alphabets.-->
+        <ol style = "list-style-type: lower-alpha;">
+            <li>List Item a</li>
+            <li>List Item b</li>
+            <li>List Item c</li>
+        </ol>
+
+        <!--We can also modify the numbering of the lists i.e. the starting point of the lists
+        using the start attributre or using the value attribute we can restart the numbering
+        starting from a defined from the affected entry.
         
+        Below example modifies he starting point of the list. The list starts from 8
+        in upper-roman style i.e. VIII and restarts the numbering from 18 after 11.-->
+        <ol style = "list-style-type: upper-roman;" start="8">
+            <li>Modified Numbering 1</li>
+            <li>Modified Numbering 2</li>
+            <li>Modified Numbering 3</li>
+            <li>Modified Numbering 4</li>
+            <li value = "18">Restarting the numbering from 18</li>
+            <li>Restarting the numbering from 19</li>
+            <li>Restarting the numbering from 20</li>
+        </ol>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        <!--Unordered lists:-->
+        <h2>Unordered Lists</h2>       
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+        <!--<ul>...</ul> defines the type of list being created.
+            <li>...</li> defines the list items.
+            
+            The numbering of list items of ordered lists can be modified 
+            into 3 different types:
+                1) disc: filled circle
+                2) square: filled squares
+                3) ciecles: empty circle
+        Below example defines the bulleted list with disc type.-->
+        <ul style = "list-style-type: disc;">
+            <li>List Item a</li>
+            <li>List Item b</li>
+            <li>List Item c</li>
+        </ul>
+        <!--If we don't want to use any of the available bullets we can also
+        add our own images to be used inplace of bullets.-->
+        <ul style = "list-style-image: url(/bullet.png)">
+            <li>List Items with new bullet</li>
+            <li>List Items with new bullet</li>
+            <li>List Items with new bullet</li>
+        </ul>
+        <!--When items are placed in a list which spans over multiple lines, the lines
+        following the first are aligned with the begining of the text on the first line.
+        If we want to align it with the bullet orlist number we can use the 
+        list-style-position property of the list-style attribute.
+        By default the value of list-style-position is outside.-->
+        <ul style = "list-style-position: inside; list-style-type: square;">
+            <li>List Items with new bullet</li>
+            <li>List Items with new bullet</li>
+            <li>List Items with new bullet</li>
+        </ul>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        <!--Definition Lists-->
+        <h2>Definition Lists</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+
+            <dt>JS</dt>
+            <dd>JavaScript</dd>
+        </dl>
+        <!--Definition lists a re usually different from the ol and ul list.
+        These have list items and their definitions.
+
+        <dl>...</dl> define the type of list being created
+        <dt>...</dt> define the list items
+        <dd>...</dd> define the definitions of items defined in <dt>-->
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    <!--Nested Lists
+    In HTML we can have an entire list inside another list.
+    The sublist or nested list becomes just another element of the superlist.
+    It is indented (inwards) from the superlist.-->
+    <h2>Nested Lists</h2>
+    <h4>A list of Peppers</h4>
+    <ul>
+        <li>Bell</li>
+        <li>Chile<br>Following are some Chile Peppers:
+        <ul>
+            <li>Serrano</li>
+            <li>Jalapeno</li>
+            <li>Habareno</li>
+            <li>Anaheim</li>
+        </ul>
+    </li>
+    <li>Szechuan</li>
+    <li>Cayenne</li>
+    </ul>
     </body>
 </html>
