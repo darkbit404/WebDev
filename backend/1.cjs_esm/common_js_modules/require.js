@@ -1,1 +1,0 @@
-console.log("This is sample module demonstrating require() function");
