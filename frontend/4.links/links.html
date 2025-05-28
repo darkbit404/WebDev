@@ -4,6 +4,49 @@
         <title>Links</title>
     </head>
     <body>
-        
+        <h1 id = "theHeading">Links</h1>
+        <!--Links:
+            To add links to another webpage on a webpage we utilize the links tag.
+            <a>...</a> is used as the link tag. It is also called as the anchr tag.
+            It needs href a compulsory attribute associated with the <a> tag to make it work.
+            
+        href tag is used to specify the link. Short for hypertext Refrence.-->        
+        <a href = "https://www.w3schools.com/html/html_links.asp">W3 Schools: HTML - Links</a>
+        <!--Here href includes the link that leads to links tutorial by W3 Schools.
+        And the text between the opening and closing is the text that is displayed on the webpage
+        instead of the actual links.
+            
+        In HTML5 an empty <a> can act as avalid placeholder links for use with CSS.
+                
+        href attribute can aslo take address to a local file or a scipt.
+        If we have a website with multiple webpages we can link the webpages to each other using 
+        their respective relative path addresses.-->
+        <p>This the home page. Below is link to second webpage.</p>
+        <a href = "second_webpage.html">Second Webpage</a>
+        <!--The relative pathnames point to the files based on the current file.
+            
+        Using the title attribute we can add a tooltip also in the a tag. Tootltip is the text that appears when
+        we hover the cursor on the link.-->
+        <br>
+        <a href = "https://www.w3schools.com/html/html_links.asp" title = "HTML - Links Tutorials">W3 Schools: HTML - Links</a>
+            
+        <!--Linking the different sections of webpage:
+            id is an attribute that is used with any of the tags to provide a unique identifier to the tag.
+            The unique id can be used to access the specific tag later.
+            
+            ids assigned to headings of specific section can be used to link the section in another webpage.
+            1) Add the link to the webpage which contains the section to be linked in different webpage in href attribute of a tag.
+            2) Just after the link put a # which specifies that text further is an id.
+            4) Add the id of the section to be linked.
+            
+            NOTE: No other punctuations, space or anything to be included btwn the link, # and the id of the section.-->
+        <br>
+        <a href = "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links#anatomy_of_a_link">Anatomy of a Link</a>
+        <!--If we want to add link to a section of the same webpage instead of adding the whole link in href attribute.
+        Only the ids can be added in the href tag to do so.-->
+        <br>
+        <a href = "#theHeading">The webpage heading</a>
+        <!--Here the link points to the heading of the webpage. You  may not see any difference here but in case long pages clicking on the link 
+        takes you to the section of the webpage.-->
     </body>
 </html>
