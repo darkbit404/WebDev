@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text formatting using HTML and CSS</title>
+    </head>
+
+    <body>
+        <h1>Text Formatting using HTML and CSS</h1>
+        <h2>Semantic Tags</h2>
+        <!--Semantic tags:
+            These tags define the meaning of the text in the tags rather than the look
+            of the text. At times there may visible differences in the look of the texts
+            but the primary motivation is to define the meaning of the texts.-->
+        <p>The anteater is the <em>strangest</em> looking animal.</p>
+        <!--The em tags are used to emphasize the text wrapped in them.-->
+
+        <p>Take a <strong>left turn</strong> at the Dee's Hop Stop.</p>
+        <!--The strong tags are used to emphasize the text more than the em tag.-->
+
+        <p><code>#include "iostream"</code></p>
+        <!--The code tag is used to specify that the text inside is a code snippet-->
+
+        <p>The url for the page is <samp>http://www.cern.ch/</samp></p>
+        <!--The samp tag is used to indicate sample text and is generally presented in a fixed 
+        width font.-->
+
+        <p>Type the command: <kbd>find  . -name "prune" -print</kbd></p>
+        <!--The tag indicates the text to be typed bny the user. These are usually used
+        on the tutorial blogs.-->
+
+        <p><code>chown</code> <var>your_file_name</var></p>
+        <!--This tag indicates a placeholder for some entity to be replaced with an actual value.-->
+
+        <p>Styles named after how they are actually being used are called <dfn>logical styles.</dfn></p>
+        <!--The dfn tags are used to indicate definition. It highlights term that will soon be defined or defined already.-->
+
+        <p>"Use the force, Luke" <cite>"Star Wars"</cite></p>
+        <!--The cite tags are utilized cite the text.-->
+
+        <p><abbr>CA</abbr> For Chartered Accountant</p>
+        <!--The abbr tags are used to indicate abbreviation of a word.-->
+
+        =====================================================================================================
+
+        <h2>Character formatting using CSS</h2>
+        <!--Character formatting using CSS:
+            span tag: the span tag does not have any inherent effect in the text it encloses. 
+            It is solely associated with style sheets. We can use span tags in conditions where we
+            have to add styling only to partial content of an element.-->
+        <p>The is just an example usage of the <span> span tag.</span></p>
+
+        <h3>Text decoration property</h3>
+        <!--Text decoration property:
+            To specify if any decoration is to be applied to the text within the affected tag.
+            Valid values are:
+                1) underline
+                2) overline
+                3) line-through
+                4) blink-->
+        <p>This is the <span style = "text-decoration: underline;"> underlined text.</span></p>
+        <p>This is the <span style = "text-decoration: overline;"> overlined text.</span></p>
+        <p>This is the <span style = "text-decoration: line-through;"> line through text.</span></p>
+        <p>This is the <span style = "text-decoration: blink;"> blinking text.</span></p>
+        <!--The blink value was used to render blinking texts (alternates between visible and invisible). 
+        This value is now deprecated in favor of CSS animations.-->
+
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        
+        <h3>Font property</h3>
+        <!---->
+    </body>
+</html>
