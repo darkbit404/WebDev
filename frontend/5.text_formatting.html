@@ -119,6 +119,48 @@
         =====================================================================================================
 
         <h2>Preformatted Text</h2>
+        <!--In html any extra whitespaces (spaces, tabs, returns) are ignored by the browser. 
+        The pre tag (prefromatted text) is an exception to this rule.
+        Any whitespaces wrapped in the pre tags are rendered as they are in the final output.-->
+        <pre>This is Preformatted text. 
+            It is rendered on the browser as it is.</pre>
+
+        =====================================================================================================
+
+        <h2>Horizontal Rules (Thematic Breaks)</h2>
+        <!--The hr tags a no closing tag creats a horizontal line on the page. The horizontal line semantically
+        meaning thematic break represents change of topic within a section.-->
+        <h1>HTML</h1>
+        <h2>What is HTML?</h2>
+        <p>
+            HTML stands for Hyper Text Markup Language
+            HTML is the standard markup language for creating Web pages
+            HTML describes the structure of a Web page
+            HTML consists of a series of elements
+            HTML elements tell the browser how to display the content
+            HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+        </p>
+        <hr>
+        <h2>What is an HTML Element?</h2>
+        <p>
+            An HTML element is defined by a start tag, some content, and an end tag.
+        </p>
+        <!--The hr tag takes width and size as attributes:
+            1) width: defines the thickness of the line in pixel. Smallest being 2.
+            2) size: defines the horizontal width of the rule line. It takes percent or pixel as inputs.-->
+        <p>100%, Default</p>
+        <hr>
+        <p>75%, Size: 2</p>
+        <hr width = "75%", size = "2">
+        <p>50%, Size: 10</p>
+        <hr width = "50%", size = "10">
+        <p>25%, Size: 15</p>
+        <hr width = "25%", size = "15">
+        <p>10%, Size: 50%</p>
+        <hr width = "10%", size = "50%">
+
+        =====================================================================================================
+        
         
     </body>
 </html>
