@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Images</title>
+    </head>
+
+    <body>
+        <h1>Images</h1>
+        <!--Images are added into the webpages using the img tag which does not have a closing tag.
+        There are two essential attributes od the img tag:
+            1) src: Takes up the URL/location of the image.
+            2) alt: Takes alternative text to be displayed incase the image doesnot load due slow internet or 
+                    unavailbilty of the image.-->
+        <img src = "painting.jpg" alt = "Main sitting beside river">
+        <p><img src = "crocodile.jpg" atl = "Crocodile">Crocodiles, particularly saltwater crocodiles, are considered apex predators.</p>
+        
+        <!--We can change the how thee image aligns with the text using the verticle align CSS property.
+        The possible values are:
+            1) baseline
+            2) top
+            3) top-text
+            4) middle
+            5) bottom
+            6) bottom-text
+            7) sub
+            8) super
+            9) length-->
+        <p><img src = "crocodile.jpg" alt = "man sitting." style = "vertical-align: baseline;">The croc</p>
+        <p><img src = "crocodile.jpg" alt = "man sitting." style = "vertical-align: top;">The croc</p>
+        <p><img src = "crocodile.jpg" alt = "man sitting." style = "vertical-align: text-top;">The croc</p>
+        <p><img src = "crocodile.jpg" alt = "man sitting." style = "vertical-align: middle;">The croc</p>
+        <p><img src = "crocodile.jpg" alt = "man sitting." style = "vertical-align: bottom;">The croc</p>
+        <p><img src = "crocodile.jpg" alt = "man sitting." style = "vertical-align: text-bottom;">The croc</p>
+        <p>The sunset<img src = "painting.jpg" alt = "man sitting." style = "height: 5px; vertical-align: sub;">beside the river.</p>
+        <p>The sunset<img src="painting.jpg" alt="man sitting." style= "height: 10px; vertical-align: super;">beside the river.</p>
+        <p>The sunset<img src = "painting.jpg" alt = "man sitting." style = "vertical-align: 100%;">beside the river.</p>
+        <p>The sunset<img src = "painting.jpg" alt = "man sitting." style = "vertical-align: 10px;">beside the river.</p>
+
+        =====================================================================================================
+
+        <h2>Wrapping text next to images</h2>
+        <!--To wrap text around images images we can use the float CSS property with the image
+        It removes the element from the flow f the page and aligns with left or right side of the container.
+        The values it takes are:
+            1) left
+            2) right-->
+        <img src = "crocodile.jpg" style = "float: left;">
+        <h2>Crocodiles</h2>
+        <p>The young crocodile emerges from the egg with a length of 20–30 cm (8–12 inches). 
+            At first it remains with its siblings concealed at the edge of its water habitat in order to avoid various predators. 
+            Principal among these are fishes and birds, but larger crocodiles also prey upon the young. 
+            Cannibalism and social exclusion are thought to greatly affect population dynamics and regulate population growth. 
+            During the first three to four years, the young increase in length by about 30 cm (about 1 foot) per year. 
+            The growth rate then gradually decreases, but growth can continue throughout life. 
+            Sexual maturity occurs at about age 10 and at a body length of about 1.5–3 meters (5–10 feet).
+            Crocodiles in captivity are known to have reached ages of 70 or more years, but longevity in the wild is poorly known. 
+            Life span estimates in the wild are based on growth rates, and limited studies of bone growth rings suggest that the life spans of wild crocodiles and those in captivity may be similar. 
+            A Nile crocodile (Crocodylus niloticus) or an estuarine (or saltwater) crocodile (C. porosus) 6 meters (about 20 feet) long may live as long as 80 years. 
+            On average, the life span of alligators and caimans is thought to be between 30 and about 60 years, whereas the true crocodiles are thought to live 50 to 75 years.</p>
+        <hr>
+        <h3>Behaviour</h3>
+        <p>Crocodiles are mostly nocturnal animals. 
+            They are predators and spend most of their time in the water; although they are also known to make journeys of several kilometers over land. 
+            In the first weeks of life, crocodiles eat insects, crustaceans, snails, small fishes, frogs, and tadpoles. 
+            Older crocodiles mainly eat fish and are more apt to prey upon waterfowl and on mammals. 
+            Occasionally, a member of one of the larger species eats a human being, though such incidents happen so infrequently that crocodiles cannot be generally regarded as man-eaters.</p>
+        
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        <h3>Stopping text wrapping</h3>
+        <!--We can stop the text wrapping at any point by just using clear CSS property. It returns to the normal page flow past the floated element.
+        The posiible values are:
+            1) left: Used for images that are left-aligned
+            2) right: Used for images that are left-aligned
+            3) both: Break to a line clear to both margins-->
+        <img src = "crocodile.jpg" style = "float: left;">
+        <h2>Crocodiles</h2>
+        <p>The young crocodile emerges from the egg with a length of 20–30 cm (8–12 inches). 
+            At first it remains with its siblings concealed at the edge of its water habitat in order to avoid various predators. 
+            Principal among these are fishes and birds, but larger crocodiles also prey upon the young.</p>
+        <p>Cannibalism and social exclusion are thought to greatly affect population dynamics and regulate population growth. 
+            During the first three to four years, the young increase in length by about 30 cm (about 1 foot) per year. 
+            The growth rate then gradually decreases, but growth can continue throughout life.
+        <p style = "clear: both;"></p>Sexual maturity occurs at about age 10 and at a body length of about 1.5–3 meters (5–10 feet).
+            Crocodiles in captivity are known to have reached ages of 70 or more years, but longevity in the wild is poorly known. 
+            Life span estimates in the wild are based on growth rates, and limited studies of bone growth rings suggest that the life spans of wild crocodiles and those in captivity may be similar. 
+            A Nile crocodile (Crocodylus niloticus) or an estuarine (or saltwater) crocodile (C. porosus) 6 meters (about 20 feet) long may live as long as 80 years. 
+            On average, the life span of alligators and caimans is thought to be between 30 and about 60 years, whereas the true crocodiles are thought to live 50 to 75 years.</p>
+        <hr>
+        <h3>Behaviour</h3>
+        <p>Crocodiles are mostly nocturnal animals. 
+            They are predators and spend most of their time in the water; although they are also known to make journeys of several kilometers over land. 
+            In the first weeks of life, crocodiles eat insects, crustaceans, snails, small fishes, frogs, and tadpoles. 
+            Older crocodiles mainly eat fish and are more apt to prey upon waterfowl and on mammals. 
+            Occasionally, a member of one of the larger species eats a human being, though such incidents happen so infrequently that crocodiles cannot be generally regarded as man-eaters.</p>
+
+        =====================================================================================================
+
+        <h2>Adjusting the space around images</h2>
+        <!--We can use margin and padding style properties to adjust the amount of white space arounfd the
+        images.-->
+        <div style = "background-color: black; width: 50%; height: 500px;">
+            <img src = "crocodile.jpg" style = "padding: 20px; border: 20px solid #333">
+        </div>
+        <div style = "background-color: grey; width: 50%; height: 50%;">
+            <img src = "crocodile.jpg" style = "margin: 20px; border: 20px solid #000000">
+        </div>
+        <!--Difference in padding and margins: 
+            1) Padding: Adds space inside the image’s border.
+                        If you set a background color or border, the padding becomes visible.
+                        Does not push other elements away, only increases the box around the image.
+            2) Margin: Creates space outside the image’s border.
+                       Pushes the image away from surrounding elements.
+                       Good for layout spacing.-->
+        
+        =====================================================================================================
+
+        <h2>Images as links</h2>
+        <!--By using the img tag inside the a tag to use it as a link.
+        Some browser5s add a border around the images. The borders can be controlled using the
+        border CSS property.-->
+        <h3>The image below is the link to the Wikipedia page of the Saltwater Crocodiles.</h3>
+        <a href = "https://en.wikipedia.org/wiki/Saltwater_crocodile"><img src = "./crocodile.jpg" style = "width: 10%; height: 10%;"></a>
+        <!--Any property of the style attribute used with images can be used hewre to modify the image link.-->
+    </body>
+</html>
